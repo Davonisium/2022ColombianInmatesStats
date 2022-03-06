@@ -1,0 +1,1775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="generator" content="PhpSpreadsheet, https://github.com/PHPOffice/PhpSpreadsheet">
+      <meta name="author" content="david" />
+    <style type="text/css">
+      html { font-family:Calibri, Arial, Helvetica, sans-serif; font-size:11pt; background-color:white }
+      a.comment-indicator:hover + div.comment { background:#ffd; position:absolute; display:block; border:1px solid black; padding:0.5em }
+      a.comment-indicator { background:red; display:inline-block; border:1px solid black; width:0.5em; height:0.5em }
+      div.comment { display:none }
+      table { border-collapse:collapse; page-break-after:always }
+      .gridlines td { border:1px dotted black }
+      .gridlines th { border:1px dotted black }
+      .b { text-align:center }
+      .e { text-align:center }
+      .f { text-align:right }
+      .inlineStr { text-align:left }
+      .n { text-align:right }
+      .s { text-align:left }
+      td.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style0 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style1 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style2 { vertical-align:bottom; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      td.style3 { vertical-align:bottom; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      th.style3 { vertical-align:bottom; text-align:right; padding-right:0px; border-bottom:none #000000; border-top:none #000000; border-left:none #000000; border-right:none #000000; color:#000000; font-family:'Calibri'; font-size:11pt; background-color:white }
+      table.sheet0 col.col0 { width:42pt }
+      table.sheet0 col.col1 { width:42pt }
+      table.sheet0 col.col2 { width:42pt }
+      table.sheet0 col.col3 { width:42pt }
+      table.sheet0 col.col4 { width:42pt }
+      table.sheet0 col.col5 { width:42pt }
+      table.sheet0 col.col6 { width:42pt }
+      table.sheet0 col.col7 { width:42pt }
+      table.sheet0 col.col8 { width:42pt }
+      table.sheet0 col.col9 { width:42pt }
+      table.sheet0 col.col10 { width:42pt }
+      table.sheet0 col.col11 { width:42pt }
+      table.sheet0 tr { height:15pt }
+    </style>
+  </head>
+
+  <body>
+<style>
+@page { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-bottom: 0.75in; }
+</style>
+    <table border="0" cellpadding="0" cellspacing="0" id="sheet0" class="sheet0 gridlines">
+        <col class="col0">
+        <col class="col1">
+        <col class="col2">
+        <col class="col3">
+        <col class="col4">
+        <col class="col5">
+        <col class="col6">
+        <col class="col7">
+        <col class="col8">
+        <col class="col9">
+        <col class="col10">
+        <col class="col11">
+        <tbody>
+          <tr class="row0">
+            <td class="column0 style0 s">date</td>
+            <td class="column1 style0 s">m_s</td>
+            <td class="column2 style0 s">f_s</td>
+            <td class="column3 style0 s">t_s</td>
+            <td class="column4 style0 s">m_c</td>
+            <td class="column5 style0 s">f_c</td>
+            <td class="column6 style0 s">t_c</td>
+            <td class="column7 style0 s">t_p</td>
+            <td class="column8 style0 s">cap</td>
+            <td class="column9 style0 s">hac</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11">&nbsp;</td>
+          </tr>
+          <tr class="row1">
+            <td class="column0 style1 n">Jan-12</td>
+            <td class="column1 style0 n">26429</td>
+            <td class="column2 style0 n">1985</td>
+            <td class="column3 style0 n">28414</td>
+            <td class="column4 style0 n">68230</td>
+            <td class="column5 style0 n">5652</td>
+            <td class="column6 style0 n">73882</td>
+            <td class="column7 style0 n">102296</td>
+            <td class="column8 style0 n">75620</td>
+            <td class="column9 style2 n">35.28%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row2">
+            <td class="column0 style1 n">Feb-12</td>
+            <td class="column1 style0 n">27516</td>
+            <td class="column2 style0 n">2086</td>
+            <td class="column3 style0 n">29602</td>
+            <td class="column4 style0 n">69265</td>
+            <td class="column5 style0 n">5824</td>
+            <td class="column6 style0 n">75089</td>
+            <td class="column7 style0 n">104691</td>
+            <td class="column8 style0 n">75620</td>
+            <td class="column9 style2 n">38.44%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row3">
+            <td class="column0 style1 n">Mar-12</td>
+            <td class="column1 style0 n">27906</td>
+            <td class="column2 style0 n">2163</td>
+            <td class="column3 style0 n">30069</td>
+            <td class="column4 style0 n">70211</td>
+            <td class="column5 style0 n">5831</td>
+            <td class="column6 style0 n">76042</td>
+            <td class="column7 style0 n">106111</td>
+            <td class="column8 style0 n">75676</td>
+            <td class="column9 style2 n">40.22%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row4">
+            <td class="column0 style1 n">Apr-12</td>
+            <td class="column1 style0 n">28602</td>
+            <td class="column2 style0 n">2235</td>
+            <td class="column3 style0 n">30837</td>
+            <td class="column4 style0 n">70609</td>
+            <td class="column5 style0 n">5874</td>
+            <td class="column6 style0 n">76483</td>
+            <td class="column7 style0 n">107320</td>
+            <td class="column8 style0 n">75676</td>
+            <td class="column9 style2 n">41.82%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row5">
+            <td class="column0 style1 n">May-12</td>
+            <td class="column1 style0 n">29325</td>
+            <td class="column2 style0 n">2353</td>
+            <td class="column3 style0 n">31678</td>
+            <td class="column4 style0 n">71227</td>
+            <td class="column5 style0 n">5880</td>
+            <td class="column6 style0 n">77107</td>
+            <td class="column7 style0 n">108785</td>
+            <td class="column8 style0 n">75676</td>
+            <td class="column9 style2 n">43.75%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row6">
+            <td class="column0 style1 n">Jun-12</td>
+            <td class="column1 style0 n">29771</td>
+            <td class="column2 style0 n">2369</td>
+            <td class="column3 style0 n">32140</td>
+            <td class="column4 style0 n">71661</td>
+            <td class="column5 style0 n">5908</td>
+            <td class="column6 style0 n">77569</td>
+            <td class="column7 style0 n">109709</td>
+            <td class="column8 style0 n">75676</td>
+            <td class="column9 style2 n">44.97%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row7">
+            <td class="column0 style1 n">Jul-12</td>
+            <td class="column1 style0 n">30300</td>
+            <td class="column2 style0 n">2407</td>
+            <td class="column3 style0 n">32707</td>
+            <td class="column4 style0 n">72353</td>
+            <td class="column5 style0 n">5945</td>
+            <td class="column6 style0 n">78298</td>
+            <td class="column7 style0 n">111005</td>
+            <td class="column8 style0 n">75676</td>
+            <td class="column9 style2 n">46.68%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row8">
+            <td class="column0 style1 n">Aug-12</td>
+            <td class="column1 style0 n">30620</td>
+            <td class="column2 style0 n">2470</td>
+            <td class="column3 style0 n">33090</td>
+            <td class="column4 style0 n">72881</td>
+            <td class="column5 style0 n">6008</td>
+            <td class="column6 style0 n">78889</td>
+            <td class="column7 style0 n">111979</td>
+            <td class="column8 style0 n">75676</td>
+            <td class="column9 style2 n">47.97%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row9">
+            <td class="column0 style1 n">Sep-12</td>
+            <td class="column1 style0 n">31425</td>
+            <td class="column2 style0 n">2526</td>
+            <td class="column3 style0 n">33951</td>
+            <td class="column4 style0 n">73109</td>
+            <td class="column5 style0 n">6044</td>
+            <td class="column6 style0 n">79153</td>
+            <td class="column7 style0 n">113104</td>
+            <td class="column8 style0 n">75676</td>
+            <td class="column9 style2 n">49.46%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row10">
+            <td class="column0 style1 n">Oct-12</td>
+            <td class="column1 style0 n">32082</td>
+            <td class="column2 style0 n">2549</td>
+            <td class="column3 style0 n">34631</td>
+            <td class="column4 style0 n">73578</td>
+            <td class="column5 style0 n">6075</td>
+            <td class="column6 style0 n">79653</td>
+            <td class="column7 style0 n">114284</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">50.92%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row11">
+            <td class="column0 style1 n">Nov-12</td>
+            <td class="column1 style0 n">32760</td>
+            <td class="column2 style0 n">2551</td>
+            <td class="column3 style0 n">35311</td>
+            <td class="column4 style0 n">73333</td>
+            <td class="column5 style0 n">6053</td>
+            <td class="column6 style0 n">79386</td>
+            <td class="column7 style0 n">114697</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">51.46%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row12">
+            <td class="column0 style1 n">Dec-12</td>
+            <td class="column1 style0 n">32114</td>
+            <td class="column2 style0 n">2457</td>
+            <td class="column3 style0 n">34571</td>
+            <td class="column4 style0 n">73273</td>
+            <td class="column5 style0 n">6040</td>
+            <td class="column6 style0 n">79313</td>
+            <td class="column7 style0 n">113884</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">50.39%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row13">
+            <td class="column0 style1 n">Jan-13</td>
+            <td class="column1 style0 n">33000</td>
+            <td class="column2 style0 n">2519</td>
+            <td class="column3 style0 n">35519</td>
+            <td class="column4 style0 n">73293</td>
+            <td class="column5 style0 n">6060</td>
+            <td class="column6 style0 n">79353</td>
+            <td class="column7 style0 n">114872</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">51.69%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row14">
+            <td class="column0 style1 n">Feb-13</td>
+            <td class="column1 style0 n">33074</td>
+            <td class="column2 style0 n">2606</td>
+            <td class="column3 style0 n">35680</td>
+            <td class="column4 style0 n">73983</td>
+            <td class="column5 style0 n">6118</td>
+            <td class="column6 style0 n">80101</td>
+            <td class="column7 style0 n">115781</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">52.89%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row15">
+            <td class="column0 style1 n">Mar-13</td>
+            <td class="column1 style0 n">33199</td>
+            <td class="column2 style0 n">2664</td>
+            <td class="column3 style0 n">35863</td>
+            <td class="column4 style0 n">74357</td>
+            <td class="column5 style0 n">6150</td>
+            <td class="column6 style0 n">80507</td>
+            <td class="column7 style0 n">116370</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">53.67%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row16">
+            <td class="column0 style1 n">Apr-13</td>
+            <td class="column1 style0 n">33298</td>
+            <td class="column2 style0 n">2763</td>
+            <td class="column3 style0 n">36061</td>
+            <td class="column4 style0 n">74397</td>
+            <td class="column5 style0 n">6557</td>
+            <td class="column6 style0 n">80954</td>
+            <td class="column7 style0 f">117015</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">54.52%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row17">
+            <td class="column0 style1 n">May-13</td>
+            <td class="column1 style0 n">33395</td>
+            <td class="column2 style0 n">2802</td>
+            <td class="column3 style0 n">36197</td>
+            <td class="column4 style0 n">75155</td>
+            <td class="column5 style0 n">6176</td>
+            <td class="column6 style0 n">81331</td>
+            <td class="column7 style0 n">117528</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">55.20%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row18">
+            <td class="column0 style1 n">Jun-13</td>
+            <td class="column1 style0 n">33405</td>
+            <td class="column2 style0 n">2792</td>
+            <td class="column3 style0 n">36197</td>
+            <td class="column4 style0 n">75477</td>
+            <td class="column5 style0 n">6186</td>
+            <td class="column6 style0 n">81663</td>
+            <td class="column7 style0 n">117860</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">55.64%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row19">
+            <td class="column0 style1 n">Jul-13</td>
+            <td class="column1 style0 n">33181</td>
+            <td class="column2 style0 n">2851</td>
+            <td class="column3 style0 n">36032</td>
+            <td class="column4 style0 n">75975</td>
+            <td class="column5 style0 n">6194</td>
+            <td class="column6 style0 n">82169</td>
+            <td class="column7 style0 n">118201</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">56.09%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row20">
+            <td class="column0 style1 n">Aug-13</td>
+            <td class="column1 style0 n">33096</td>
+            <td class="column2 style0 n">2845</td>
+            <td class="column3 style0 n">35941</td>
+            <td class="column4 style0 n">76296</td>
+            <td class="column5 style0 n">6241</td>
+            <td class="column6 style0 n">82537</td>
+            <td class="column7 style0 n">118478</td>
+            <td class="column8 style0 n">75726</td>
+            <td class="column9 style2 n">56.46%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row21">
+            <td class="column0 style1 n">Sep-13</td>
+            <td class="column1 style0 n">33447</td>
+            <td class="column2 style0 n">2864</td>
+            <td class="column3 style0 n">36311</td>
+            <td class="column4 style0 n">76756</td>
+            <td class="column5 style0 n">6283</td>
+            <td class="column6 style0 n">83039</td>
+            <td class="column7 style0 n">119350</td>
+            <td class="column8 style0 n">75895</td>
+            <td class="column9 style2 n">57.26%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row22">
+            <td class="column0 style1 n">Oct-13</td>
+            <td class="column1 style0 n">33703</td>
+            <td class="column2 style0 n">2812</td>
+            <td class="column3 style0 n">36515</td>
+            <td class="column4 style0 n">77174</td>
+            <td class="column5 style0 n">6349</td>
+            <td class="column6 style0 n">83523</td>
+            <td class="column7 style0 n">120038</td>
+            <td class="column8 style0 n">75895</td>
+            <td class="column9 style2 n">58.16%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row23">
+            <td class="column0 style1 n">Nov-13</td>
+            <td class="column1 style0 n">34122</td>
+            <td class="column2 style0 n">2840</td>
+            <td class="column3 style0 n">36962</td>
+            <td class="column4 style0 n">77031</td>
+            <td class="column5 style0 n">6317</td>
+            <td class="column6 style0 n">83348</td>
+            <td class="column7 style0 n">120310</td>
+            <td class="column8 style0 n">75895</td>
+            <td class="column9 style2 n">58.52%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row24">
+            <td class="column0 style1 n">Dec-13</td>
+            <td class="column1 style0 n">34307</td>
+            <td class="column2 style0 n">2745</td>
+            <td class="column3 style0 n">37052</td>
+            <td class="column4 style0 n">76739</td>
+            <td class="column5 style0 n">6241</td>
+            <td class="column6 style0 n">82980</td>
+            <td class="column7 style0 n">120032</td>
+            <td class="column8 style0 n">76066</td>
+            <td class="column9 style2 n">57.80%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row25">
+            <td class="column0 style1 n">Jan-14</td>
+            <td class="column1 style0 n">34978</td>
+            <td class="column2 style0 n">2777</td>
+            <td class="column3 style0 n">37755</td>
+            <td class="column4 style0 n">76668</td>
+            <td class="column5 style0 n">6200</td>
+            <td class="column6 style0 n">82868</td>
+            <td class="column7 style0 n">120623</td>
+            <td class="column8 style0 n">76066</td>
+            <td class="column9 style2 n">58.58%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row26">
+            <td class="column0 style1 n">Feb-14</td>
+            <td class="column1 style0 n">35225</td>
+            <td class="column2 style0 n">2736</td>
+            <td class="column3 style0 n">37961</td>
+            <td class="column4 style0 n">75772</td>
+            <td class="column5 style0 n">6082</td>
+            <td class="column6 style0 n">81854</td>
+            <td class="column7 style0 n">119815</td>
+            <td class="column8 style0 n">76180</td>
+            <td class="column9 style2 n">57.28%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row27">
+            <td class="column0 style1 n">Mar-14</td>
+            <td class="column1 style0 n">36526</td>
+            <td class="column2 style0 n">3204</td>
+            <td class="column3 style0 n">39730</td>
+            <td class="column4 style0 n">73725</td>
+            <td class="column5 style0 n">5513</td>
+            <td class="column6 style0 n">79238</td>
+            <td class="column7 style0 n">118968</td>
+            <td class="column8 style0 n">76180</td>
+            <td class="column9 style2 n">56.17%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row28">
+            <td class="column0 style1 n">Apr-14</td>
+            <td class="column1 style0 n">36524</td>
+            <td class="column2 style0 n">3231</td>
+            <td class="column3 style0 n">39755</td>
+            <td class="column4 style0 n">72969</td>
+            <td class="column5 style0 n">5251</td>
+            <td class="column6 style0 n">78220</td>
+            <td class="column7 style0 n">117975</td>
+            <td class="column8 style0 n">76283</td>
+            <td class="column9 style2 n">54.65%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row29">
+            <td class="column0 style1 n">May-14</td>
+            <td class="column1 style0 n">37137</td>
+            <td class="column2 style0 n">2926</td>
+            <td class="column3 style0 n">40063</td>
+            <td class="column4 style0 n">71819</td>
+            <td class="column5 style0 n">5429</td>
+            <td class="column6 style0 n">77248</td>
+            <td class="column7 style0 n">117311</td>
+            <td class="column8 style0 n">76519</td>
+            <td class="column9 style2 n">53.31%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row30">
+            <td class="column0 style1 n">Jun-14</td>
+            <td class="column1 style0 n">37638</td>
+            <td class="column2 style0 n">3022</td>
+            <td class="column3 style0 n">40660</td>
+            <td class="column4 style0 n">71291</td>
+            <td class="column5 style0 n">5280</td>
+            <td class="column6 style0 n">76571</td>
+            <td class="column7 style0 n">117231</td>
+            <td class="column8 style0 n">76519</td>
+            <td class="column9 style2 n">53.21%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row31">
+            <td class="column0 style1 n">Jul-14</td>
+            <td class="column1 style0 n">37812</td>
+            <td class="column2 style0 n">2879</td>
+            <td class="column3 style0 n">40691</td>
+            <td class="column4 style0 n">71075</td>
+            <td class="column5 style0 n">5364</td>
+            <td class="column6 style0 n">76439</td>
+            <td class="column7 style0 n">117130</td>
+            <td class="column8 style0 n">76553</td>
+            <td class="column9 style2 n">53.01%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row32">
+            <td class="column0 style1 n">Aug-14</td>
+            <td class="column1 style0 n">38165</td>
+            <td class="column2 style0 n">3185</td>
+            <td class="column3 style0 n">41350</td>
+            <td class="column4 style0 n">70461</td>
+            <td class="column5 style0 n">5062</td>
+            <td class="column6 style0 n">75523</td>
+            <td class="column7 style0 f">116873</td>
+            <td class="column8 style0 n">76553</td>
+            <td class="column9 style2 n">52.67%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row33">
+            <td class="column0 style1 n">Sep-14</td>
+            <td class="column1 style0 n">38202</td>
+            <td class="column2 style0 n">3223</td>
+            <td class="column3 style0 n">41425</td>
+            <td class="column4 style0 n">70643</td>
+            <td class="column5 style0 n">4969</td>
+            <td class="column6 style0 n">75612</td>
+            <td class="column7 style0 n">117037</td>
+            <td class="column8 style0 n">76553</td>
+            <td class="column9 style2 n">52.88%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row34">
+            <td class="column0 style1 n">Oct-14</td>
+            <td class="column1 style0 n">37321</td>
+            <td class="column2 style0 n">3102</td>
+            <td class="column3 style0 n">40423</td>
+            <td class="column4 style0 n">70980</td>
+            <td class="column5 style0 n">5046</td>
+            <td class="column6 style0 n">76026</td>
+            <td class="column7 style0 n">116449</td>
+            <td class="column8 style0 n">78022</td>
+            <td class="column9 style2 n">49.25%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row35">
+            <td class="column0 style1 n">Nov-14</td>
+            <td class="column1 style0 n">36070</td>
+            <td class="column2 style0 n">3080</td>
+            <td class="column3 style0 n">39150</td>
+            <td class="column4 style0 n">71440</td>
+            <td class="column5 style0 n">5044</td>
+            <td class="column6 style0 n">76484</td>
+            <td class="column7 style0 n">115634</td>
+            <td class="column8 style0 n">78022</td>
+            <td class="column9 style2 n">48.21%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row36">
+            <td class="column0 style1 n">Dec-14</td>
+            <td class="column1 style0 n">35053</td>
+            <td class="column2 style0 n">3044</td>
+            <td class="column3 style0 n">38097</td>
+            <td class="column4 style0 n">70622</td>
+            <td class="column5 style0 n">4904</td>
+            <td class="column6 style0 n">75526</td>
+            <td class="column7 style0 n">113623</td>
+            <td class="column8 style0 n">77874</td>
+            <td class="column9 style2 n">45.91%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row37">
+            <td class="column0 style1 n">Jan-15</td>
+            <td class="column1 style0 n">37994</td>
+            <td class="column2 style0 n">3139</td>
+            <td class="column3 style0 n">41133</td>
+            <td class="column4 style0 n">70646</td>
+            <td class="column5 style0 n">4981</td>
+            <td class="column6 style0 n">75627</td>
+            <td class="column7 style0 n">116760</td>
+            <td class="column8 style0 n">77874</td>
+            <td class="column9 style2 n">49.93%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row38">
+            <td class="column0 style1 n">Feb-15</td>
+            <td class="column1 style0 n">39166</td>
+            <td class="column2 style0 n">3246</td>
+            <td class="column3 style0 n">42412</td>
+            <td class="column4 style0 n">70713</td>
+            <td class="column5 style0 n">4934</td>
+            <td class="column6 style0 n">75647</td>
+            <td class="column7 style0 n">118059</td>
+            <td class="column8 style0 n">77874</td>
+            <td class="column9 style2 n">51.60%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row39">
+            <td class="column0 style1 n">Mar-15</td>
+            <td class="column1 style0 n">39969</td>
+            <td class="column2 style0 n">3437</td>
+            <td class="column3 style0 n">43406</td>
+            <td class="column4 style0 n">70390</td>
+            <td class="column5 style0 n">4862</td>
+            <td class="column6 style0 n">75252</td>
+            <td class="column7 style0 n">118658</td>
+            <td class="column8 style0 n">77874</td>
+            <td class="column9 style2 n">52.37%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row40">
+            <td class="column0 style1 n">Apr-15</td>
+            <td class="column1 style0 n">40795</td>
+            <td class="column2 style0 n">3527</td>
+            <td class="column3 style0 n">44322</td>
+            <td class="column4 style0 n">70227</td>
+            <td class="column5 style0 n">4829</td>
+            <td class="column6 style0 n">75056</td>
+            <td class="column7 style0 n">119378</td>
+            <td class="column8 style0 n">77874</td>
+            <td class="column9 style2 n">53.30%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row41">
+            <td class="column0 style1 n">May-15</td>
+            <td class="column1 style0 n">40575</td>
+            <td class="column2 style0 n">3597</td>
+            <td class="column3 style0 n">44172</td>
+            <td class="column4 style0 n">71204</td>
+            <td class="column5 style0 n">4824</td>
+            <td class="column6 style0 n">76028</td>
+            <td class="column7 style0 n">120200</td>
+            <td class="column8 style0 n">78044</td>
+            <td class="column9 style2 n">54.02%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row42">
+            <td class="column0 style1 n">Jun-15</td>
+            <td class="column1 style0 n">42038</td>
+            <td class="column2 style0 n">3613</td>
+            <td class="column3 style0 n">45651</td>
+            <td class="column4 style0 n">70385</td>
+            <td class="column5 style0 n">4869</td>
+            <td class="column6 style0 n">75254</td>
+            <td class="column7 style0 n">120905</td>
+            <td class="column8 style0 n">78044</td>
+            <td class="column9 style2 n">54.92%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row43">
+            <td class="column0 style1 n">Jul-15</td>
+            <td class="column1 style0 n">40456</td>
+            <td class="column2 style0 n">3555</td>
+            <td class="column3 style0 n">44011</td>
+            <td class="column4 style0 n">71932</td>
+            <td class="column5 style0 n">4897</td>
+            <td class="column6 style0 n">76829</td>
+            <td class="column7 style0 n">120840</td>
+            <td class="column8 style0 n">78044</td>
+            <td class="column9 style2 n">54.84%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row44">
+            <td class="column0 style1 n">Aug-15</td>
+            <td class="column1 style0 n">40656</td>
+            <td class="column2 style0 n">3576</td>
+            <td class="column3 style0 n">44232</td>
+            <td class="column4 style0 n">72164</td>
+            <td class="column5 style0 n">4861</td>
+            <td class="column6 style0 n">77025</td>
+            <td class="column7 style0 n">121257</td>
+            <td class="column8 style0 n">78044</td>
+            <td class="column9 style2 n">55.37%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row45">
+            <td class="column0 style1 n">Sep-15</td>
+            <td class="column1 style0 n">39593</td>
+            <td class="column2 style0 n">3616</td>
+            <td class="column3 style0 n">43209</td>
+            <td class="column4 style0 n">73366</td>
+            <td class="column5 style0 n">4814</td>
+            <td class="column6 style0 n">78180</td>
+            <td class="column7 style0 n">121389</td>
+            <td class="column8 style0 n">78044</td>
+            <td class="column9 style2 n">55.54%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row46">
+            <td class="column0 style1 n">Oct-15</td>
+            <td class="column1 style0 n">40172</td>
+            <td class="column2 style0 n">3567</td>
+            <td class="column3 style0 n">43739</td>
+            <td class="column4 style0 n">72749</td>
+            <td class="column5 style0 n">4807</td>
+            <td class="column6 style0 n">77556</td>
+            <td class="column7 style0 n">121295</td>
+            <td class="column8 style0 n">78044</td>
+            <td class="column9 style2 n">55.42%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row47">
+            <td class="column0 style1 n">Nov-15</td>
+            <td class="column1 style0 n">39910</td>
+            <td class="column2 style0 n">3600</td>
+            <td class="column3 style0 n">43510</td>
+            <td class="column4 style0 n">72981</td>
+            <td class="column5 style0 n">4805</td>
+            <td class="column6 style0 n">77786</td>
+            <td class="column7 style0 n">121296</td>
+            <td class="column8 style0 n">78044</td>
+            <td class="column9 style2 n">55.42%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row48">
+            <td class="column0 style1 n">Dec-15</td>
+            <td class="column1 style0 n">39190</td>
+            <td class="column2 style0 n">3563</td>
+            <td class="column3 style0 n">42753</td>
+            <td class="column4 style0 n">72998</td>
+            <td class="column5 style0 n">4693</td>
+            <td class="column6 style0 n">77691</td>
+            <td class="column7 style0 n">120444</td>
+            <td class="column8 style0 n">77953</td>
+            <td class="column9 style2 n">54.51%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row49">
+            <td class="column0 style1 n">Jan-16</td>
+            <td class="column1 style0 n">39698</td>
+            <td class="column2 style0 n">3645</td>
+            <td class="column3 style0 n">43343</td>
+            <td class="column4 style0 n">72798</td>
+            <td class="column5 style0 n">4595</td>
+            <td class="column6 style0 n">77393</td>
+            <td class="column7 style0 n">120736</td>
+            <td class="column8 style0 n">77953</td>
+            <td class="column9 style2 n">54.88%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row50">
+            <td class="column0 style1 n">Feb-16</td>
+            <td class="column1 style0 n">39250</td>
+            <td class="column2 style0 n">3645</td>
+            <td class="column3 style0 n">42895</td>
+            <td class="column4 style0 n">73833</td>
+            <td class="column5 style0 n">4628</td>
+            <td class="column6 style0 n">78461</td>
+            <td class="column7 style0 n">121356</td>
+            <td class="column8 style0 n">77953</td>
+            <td class="column9 style2 n">55.68%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row51">
+            <td class="column0 style1 n">Mar-16</td>
+            <td class="column1 style0 n">40192</td>
+            <td class="column2 style0 n">3758</td>
+            <td class="column3 style0 n">43950</td>
+            <td class="column4 style0 n">73433</td>
+            <td class="column5 style0 n">4637</td>
+            <td class="column6 style0 n">78070</td>
+            <td class="column7 style0 n">122020</td>
+            <td class="column8 style0 n">78181</td>
+            <td class="column9 style2 n">56.07%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row52">
+            <td class="column0 style1 n">Apr-16</td>
+            <td class="column1 style0 n">40131</td>
+            <td class="column2 style0 n">3813</td>
+            <td class="column3 style0 n">43944</td>
+            <td class="column4 style0 n">73486</td>
+            <td class="column5 style0 n">4586</td>
+            <td class="column6 style0 n">78072</td>
+            <td class="column7 style0 n">122016</td>
+            <td class="column8 style0 n">78181</td>
+            <td class="column9 style2 n">56.07%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row53">
+            <td class="column0 style1 n">May-16</td>
+            <td class="column1 style0 n">39439</td>
+            <td class="column2 style0 n">3796</td>
+            <td class="column3 style0 n">43235</td>
+            <td class="column4 style0 n">74140</td>
+            <td class="column5 style0 n">4570</td>
+            <td class="column6 style0 n">78710</td>
+            <td class="column7 style0 n">121945</td>
+            <td class="column8 style0 n">78181</td>
+            <td class="column9 style2 n">55.98%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row54">
+            <td class="column0 style1 n">Jun-16</td>
+            <td class="column1 style0 n">38350</td>
+            <td class="column2 style0 n">3663</td>
+            <td class="column3 style0 n">42013</td>
+            <td class="column4 style0 n">74557</td>
+            <td class="column5 style0 n">4660</td>
+            <td class="column6 style0 n">79217</td>
+            <td class="column7 style0 n">121230</td>
+            <td class="column8 style0 n">78055</td>
+            <td class="column9 style2 n">55.31%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row55">
+            <td class="column0 style1 n">Jul-16</td>
+            <td class="column1 style0 n">38244</td>
+            <td class="column2 style0 n">3712</td>
+            <td class="column3 style0 n">41956</td>
+            <td class="column4 style0 n">74202</td>
+            <td class="column5 style0 n">4499</td>
+            <td class="column6 style0 n">78701</td>
+            <td class="column7 style0 n">120657</td>
+            <td class="column8 style0 n">78055</td>
+            <td class="column9 style2 n">54.58%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row56">
+            <td class="column0 style1 n">Aug-16</td>
+            <td class="column1 style0 n">36682</td>
+            <td class="column2 style0 n">2691</td>
+            <td class="column3 style0 n">39373</td>
+            <td class="column4 style0 n">75987</td>
+            <td class="column5 style0 n">5361</td>
+            <td class="column6 style0 n">81348</td>
+            <td class="column7 style0 n">120721</td>
+            <td class="column8 style0 n">78055</td>
+            <td class="column9 style2 n">54.66%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row57">
+            <td class="column0 style1 n">Sep-16</td>
+            <td class="column1 style0 n">36462</td>
+            <td class="column2 style0 n">2704</td>
+            <td class="column3 style0 n">39166</td>
+            <td class="column4 style0 n">76391</td>
+            <td class="column5 style0 n">5357</td>
+            <td class="column6 style0 n">81748</td>
+            <td class="column7 style0 n">120914</td>
+            <td class="column8 style0 n">78077</td>
+            <td class="column9 style2 n">54.87%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row58">
+            <td class="column0 style1 n">Oct-16</td>
+            <td class="column1 style0 n">35879</td>
+            <td class="column2 style0 n">2734</td>
+            <td class="column3 style0 n">38613</td>
+            <td class="column4 style0 n">76784</td>
+            <td class="column5 style0 n">5271</td>
+            <td class="column6 style0 n">82055</td>
+            <td class="column7 style0 n">120668</td>
+            <td class="column8 style0 n">78077</td>
+            <td class="column9 style2 n">54.55%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row59">
+            <td class="column0 style1 n">Nov-16</td>
+            <td class="column1 style0 n">35735</td>
+            <td class="column2 style0 n">2687</td>
+            <td class="column3 style0 n">38422</td>
+            <td class="column4 style0 n">76538</td>
+            <td class="column5 style0 n">5213</td>
+            <td class="column6 style0 n">81751</td>
+            <td class="column7 style0 n">120173</td>
+            <td class="column8 style0 n">78246</td>
+            <td class="column9 style2 n">53.58%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row60">
+            <td class="column0 style1 n">Dec-16</td>
+            <td class="column1 style0 n">35098</td>
+            <td class="column2 style0 n">2741</td>
+            <td class="column3 style0 n">37839</td>
+            <td class="column4 style0 n">75655</td>
+            <td class="column5 style0 n">5038</td>
+            <td class="column6 style0 n">80693</td>
+            <td class="column7 style0 n">118532</td>
+            <td class="column8 style0 n">78420</td>
+            <td class="column9 style2 n">51.15%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row61">
+            <td class="column0 style1 n">Jan-17</td>
+            <td class="column1 style0 n">35655</td>
+            <td class="column2 style0 n">2701</td>
+            <td class="column3 style0 n">38356</td>
+            <td class="column4 style0 n">75470</td>
+            <td class="column5 style0 n">5099</td>
+            <td class="column6 style0 n">80569</td>
+            <td class="column7 style0 n">118925</td>
+            <td class="column8 style0 n">78418</td>
+            <td class="column9 style2 n">51.66%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row62">
+            <td class="column0 style1 n">Feb-17</td>
+            <td class="column1 style0 n">35593</td>
+            <td class="column2 style0 n">2793</td>
+            <td class="column3 style0 n">38386</td>
+            <td class="column4 style0 n">75797</td>
+            <td class="column5 style0 n">5086</td>
+            <td class="column6 style0 n">80883</td>
+            <td class="column7 style0 n">119269</td>
+            <td class="column8 style0 n">78418</td>
+            <td class="column9 style2 n">52.09%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row63">
+            <td class="column0 style1 n">Mar-17</td>
+            <td class="column1 style0 n">34568</td>
+            <td class="column2 style0 n">2557</td>
+            <td class="column3 style0 n">37125</td>
+            <td class="column4 style0 n">75788</td>
+            <td class="column5 style0 n">5273</td>
+            <td class="column6 style0 n">81061</td>
+            <td class="column7 style0 n">118186</td>
+            <td class="column8 style0 n">78418</td>
+            <td class="column9 style2 n">50.71%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row64">
+            <td class="column0 style1 n">Apr-17</td>
+            <td class="column1 style0 n">33721</td>
+            <td class="column2 style0 n">2733</td>
+            <td class="column3 style0 n">36454</td>
+            <td class="column4 style0 n">75671</td>
+            <td class="column5 style0 n">4994</td>
+            <td class="column6 style0 n">80665</td>
+            <td class="column7 style0 n">117119</td>
+            <td class="column8 style0 n">78690</td>
+            <td class="column9 style2 n">48.84%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row65">
+            <td class="column0 style1 n">May-17</td>
+            <td class="column1 style0 n">32879</td>
+            <td class="column2 style0 n">2712</td>
+            <td class="column3 style0 n">35591</td>
+            <td class="column4 style0 n">75327</td>
+            <td class="column5 style0 n">4960</td>
+            <td class="column6 style0 n">80287</td>
+            <td class="column7 style0 n">115878</td>
+            <td class="column8 style0 n">78690</td>
+            <td class="column9 style2 n">47.26%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row66">
+            <td class="column0 style1 n">Jun-17</td>
+            <td class="column1 style0 n">32842</td>
+            <td class="column2 style0 n">2808</td>
+            <td class="column3 style0 n">35650</td>
+            <td class="column4 style0 n">75094</td>
+            <td class="column5 style0 n">4884</td>
+            <td class="column6 style0 n">79978</td>
+            <td class="column7 style0 n">115628</td>
+            <td class="column8 style0 n">78690</td>
+            <td class="column9 style2 n">46.94%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row67">
+            <td class="column0 style1 n">Jul-17</td>
+            <td class="column1 style0 n">34519</td>
+            <td class="column2 style0 n">2923</td>
+            <td class="column3 style0 n">37442</td>
+            <td class="column4 style0 n">74533</td>
+            <td class="column5 style0 n">4798</td>
+            <td class="column6 style0 n">79331</td>
+            <td class="column7 style0 n">116773</td>
+            <td class="column8 style0 n">78782</td>
+            <td class="column9 style2 n">48.22%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row68">
+            <td class="column0 style1 n">Aug-17</td>
+            <td class="column1 style0 n">33893</td>
+            <td class="column2 style0 n">2933</td>
+            <td class="column3 style0 n">36826</td>
+            <td class="column4 style0 n">74801</td>
+            <td class="column5 style0 n">4746</td>
+            <td class="column6 style0 n">79547</td>
+            <td class="column7 style0 n">116373</td>
+            <td class="column8 style0 n">78734</td>
+            <td class="column9 style2 n">47.81%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row69">
+            <td class="column0 style1 n">Sep-17</td>
+            <td class="column1 style0 n">33899</td>
+            <td class="column2 style0 n">3032</td>
+            <td class="column3 style0 n">36931</td>
+            <td class="column4 style0 n">74194</td>
+            <td class="column5 style0 n">4583</td>
+            <td class="column6 style0 n">78777</td>
+            <td class="column7 style0 n">115708</td>
+            <td class="column8 style0 n">79051</td>
+            <td class="column9 style2 n">46.37%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row70">
+            <td class="column0 style1 n">Oct-17</td>
+            <td class="column1 style0 n">33859</td>
+            <td class="column2 style0 n">3000</td>
+            <td class="column3 style0 n">36859</td>
+            <td class="column4 style0 n">74191</td>
+            <td class="column5 style0 n">4671</td>
+            <td class="column6 style0 n">78862</td>
+            <td class="column7 style0 n">115721</td>
+            <td class="column8 style0 n">79051</td>
+            <td class="column9 style2 n">46.39%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row71">
+            <td class="column0 style1 n">Nov-17</td>
+            <td class="column1 style0 n">33690</td>
+            <td class="column2 style0 n">3019</td>
+            <td class="column3 style0 n">36709</td>
+            <td class="column4 style0 n">74159</td>
+            <td class="column5 style0 n">4694</td>
+            <td class="column6 style0 n">78853</td>
+            <td class="column7 style0 n">115562</td>
+            <td class="column8 style0 n">78955</td>
+            <td class="column9 style2 n">46.36%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row72">
+            <td class="column0 style1 n">Dec-17</td>
+            <td class="column1 style0 n">33776</td>
+            <td class="column2 style0 n">3001</td>
+            <td class="column3 style0 n">36777</td>
+            <td class="column4 style0 n">73360</td>
+            <td class="column5 style0 n">4613</td>
+            <td class="column6 style0 n">77973</td>
+            <td class="column7 style0 n">114750</td>
+            <td class="column8 style0 n">79211</td>
+            <td class="column9 style2 n">44.87%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row73">
+            <td class="column0 style1 n">Jan-18</td>
+            <td class="column1 style0 n">33939</td>
+            <td class="column2 style0 n">2999</td>
+            <td class="column3 style0 n">36938</td>
+            <td class="column4 style0 n">73855</td>
+            <td class="column5 style0 n">4603</td>
+            <td class="column6 style0 n">78458</td>
+            <td class="column7 style0 n">115396</td>
+            <td class="column8 style0 n">79211</td>
+            <td class="column9 style2 n">45.68%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row74">
+            <td class="column0 style1 n">Feb-18</td>
+            <td class="column1 style0 n">34019</td>
+            <td class="column2 style0 n">3059</td>
+            <td class="column3 style0 n">37078</td>
+            <td class="column4 style0 n">73807</td>
+            <td class="column5 style0 n">4603</td>
+            <td class="column6 style0 n">78410</td>
+            <td class="column7 style0 n">115488</td>
+            <td class="column8 style0 n">79723</td>
+            <td class="column9 style2 n">44.86%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row75">
+            <td class="column0 style1 n">Mar-18</td>
+            <td class="column1 style0 n">34507</td>
+            <td class="column2 style0 n">3176</td>
+            <td class="column3 style0 n">37683</td>
+            <td class="column4 style0 n">73314</td>
+            <td class="column5 style0 n">4566</td>
+            <td class="column6 style0 n">77880</td>
+            <td class="column7 style0 n">115563</td>
+            <td class="column8 style0 n">79723</td>
+            <td class="column9 style2 n">44.96%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row76">
+            <td class="column0 style1 n">Apr-18</td>
+            <td class="column1 style0 n">34993</td>
+            <td class="column2 style0 n">3235</td>
+            <td class="column3 style0 n">38228</td>
+            <td class="column4 style0 n">73259</td>
+            <td class="column5 style0 n">4571</td>
+            <td class="column6 style0 n">77830</td>
+            <td class="column7 style0 n">116058</td>
+            <td class="column8 style0 n">79723</td>
+            <td class="column9 style2 n">45.58%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row77">
+            <td class="column0 style1 n">May-18</td>
+            <td class="column1 style0 n">35315</td>
+            <td class="column2 style0 n">3113</td>
+            <td class="column3 style0 n">38428</td>
+            <td class="column4 style0 n">73889</td>
+            <td class="column5 style0 n">4709</td>
+            <td class="column6 style0 n">78598</td>
+            <td class="column7 style0 n">117026</td>
+            <td class="column8 style0 n">79172</td>
+            <td class="column9 style2 n">47.81%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row78">
+            <td class="column0 style1 n">Jun-18</td>
+            <td class="column1 style0 n">34946</td>
+            <td class="column2 style0 n">3412</td>
+            <td class="column3 style0 n">38358</td>
+            <td class="column4 style0 n">74802</td>
+            <td class="column5 style0 n">4532</td>
+            <td class="column6 style0 n">79334</td>
+            <td class="column7 style0 n">117692</td>
+            <td class="column8 style0 n">79236</td>
+            <td class="column9 style2 n">48.53%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row79">
+            <td class="column0 style1 n">Jul-18</td>
+            <td class="column1 style0 n">35743</td>
+            <td class="column2 style0 n">3487</td>
+            <td class="column3 style0 n">39230</td>
+            <td class="column4 style0 n">74484</td>
+            <td class="column5 style0 n">4539</td>
+            <td class="column6 style0 n">79023</td>
+            <td class="column7 style0 n">118253</td>
+            <td class="column8 style0 n">80660</td>
+            <td class="column9 style2 n">46.61%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row80">
+            <td class="column0 style1 n">Aug-18</td>
+            <td class="column1 style0 n">36481</td>
+            <td class="column2 style0 n">3473</td>
+            <td class="column3 style0 n">39954</td>
+            <td class="column4 style0 n">74191</td>
+            <td class="column5 style0 n">4563</td>
+            <td class="column6 style0 n">78754</td>
+            <td class="column7 style0 n">118708</td>
+            <td class="column8 style0 n">80660</td>
+            <td class="column9 style2 n">47.17%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row81">
+            <td class="column0 style1 n">Sep-18</td>
+            <td class="column1 style0 n">36461</td>
+            <td class="column2 style0 n">3609</td>
+            <td class="column3 style0 n">40070</td>
+            <td class="column4 style0 n">74585</td>
+            <td class="column5 style0 n">4470</td>
+            <td class="column6 style0 n">79055</td>
+            <td class="column7 style0 n">119125</td>
+            <td class="column8 style0 n">80203</td>
+            <td class="column9 style2 n">48.53%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row82">
+            <td class="column0 style1 n">Oct-18</td>
+            <td class="column1 style0 n">36631</td>
+            <td class="column2 style0 n">3766</td>
+            <td class="column3 style0 n">40397</td>
+            <td class="column4 style0 n">74658</td>
+            <td class="column5 style0 n">4467</td>
+            <td class="column6 style0 n">79125</td>
+            <td class="column7 style0 n">119522</td>
+            <td class="column8 style0 n">80203</td>
+            <td class="column9 style2 n">49.02%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row83">
+            <td class="column0 style1 n">Nov-18</td>
+            <td class="column1 style0 n">36386</td>
+            <td class="column2 style0 n">3884</td>
+            <td class="column3 style0 n">40270</td>
+            <td class="column4 style0 n">74826</td>
+            <td class="column5 style0 n">4395</td>
+            <td class="column6 style0 n">79221</td>
+            <td class="column7 style0 n">119491</td>
+            <td class="column8 style0 n">80227</td>
+            <td class="column9 style2 n">48.94%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row84">
+            <td class="column0 style1 n">Dec-18</td>
+            <td class="column1 style0 n">36099</td>
+            <td class="column2 style0 n">3950</td>
+            <td class="column3 style0 n">40049</td>
+            <td class="column4 style0 n">74195</td>
+            <td class="column5 style0 n">4269</td>
+            <td class="column6 style0 n">78464</td>
+            <td class="column7 style0 n">118513</td>
+            <td class="column8 style0 n">80227</td>
+            <td class="column9 style2 n">47.72%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row85">
+            <td class="column0 style1 n">Jan-19</td>
+            <td class="column1 style0 n">36366</td>
+            <td class="column2 style0 n">3149</td>
+            <td class="column3 style0 n">39515</td>
+            <td class="column4 style0 n">74205</td>
+            <td class="column5 style0 n">5049</td>
+            <td class="column6 style0 n">79254</td>
+            <td class="column7 style0 n">118769</td>
+            <td class="column8 style0 n">80227</td>
+            <td class="column9 style2 n">48.04%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row86">
+            <td class="column0 style1 n">Feb-19</td>
+            <td class="column1 style0 n">36513</td>
+            <td class="column2 style0 n">3262</td>
+            <td class="column3 style0 n">39775</td>
+            <td class="column4 style0 n">74658</td>
+            <td class="column5 style0 n">4980</td>
+            <td class="column6 style0 n">79638</td>
+            <td class="column7 style0 n">119413</td>
+            <td class="column8 style0 n">80227</td>
+            <td class="column9 style2 n">48.84%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row87">
+            <td class="column0 style1 n">Mar-19</td>
+            <td class="column1 style0 n">36714</td>
+            <td class="column2 style0 n">3312</td>
+            <td class="column3 style0 n">40026</td>
+            <td class="column4 style0 n">75058</td>
+            <td class="column5 style0 n">4938</td>
+            <td class="column6 style0 n">79996</td>
+            <td class="column7 style0 n">120022</td>
+            <td class="column8 style0 n">80159</td>
+            <td class="column9 style2 n">49.73%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row88">
+            <td class="column0 style1 n">Apr-19</td>
+            <td class="column1 style0 n">37894</td>
+            <td class="column2 style0 n">3409</td>
+            <td class="column3 style0 n">41303</td>
+            <td class="column4 style0 n">74656</td>
+            <td class="column5 style0 n">4916</td>
+            <td class="column6 style0 n">79572</td>
+            <td class="column7 style0 n">120875</td>
+            <td class="column8 style0 n">80212</td>
+            <td class="column9 style2 n">50.69%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row89">
+            <td class="column0 style1 n">May-19</td>
+            <td class="column1 style0 n">37132</td>
+            <td class="column2 style0 n">3232</td>
+            <td class="column3 style0 n">40364</td>
+            <td class="column4 style0 n">75917</td>
+            <td class="column5 style0 n">5206</td>
+            <td class="column6 style0 n">81123</td>
+            <td class="column7 style0 n">121487</td>
+            <td class="column8 style0 n">80236</td>
+            <td class="column9 style2 n">51.41%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row90">
+            <td class="column0 style1 n">Jun-19</td>
+            <td class="column1 style0 n">37862</td>
+            <td class="column2 style0 n">3220</td>
+            <td class="column3 style0 n">41082</td>
+            <td class="column4 style0 n">76086</td>
+            <td class="column5 style0 n">5249</td>
+            <td class="column6 style0 n">81335</td>
+            <td class="column7 style0 n">122417</td>
+            <td class="column8 style0 n">80373</td>
+            <td class="column9 style2 n">52.31%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row91">
+            <td class="column0 style1 n">Jul-19</td>
+            <td class="column1 style0 n">37990</td>
+            <td class="column2 style0 n">3340</td>
+            <td class="column3 style0 n">41330</td>
+            <td class="column4 style0 n">76468</td>
+            <td class="column5 style0 n">5280</td>
+            <td class="column6 style0 n">81748</td>
+            <td class="column7 style0 n">123078</td>
+            <td class="column8 style0 n">80225</td>
+            <td class="column9 style2 n">53.42%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row92">
+            <td class="column0 style1 n">Aug-19</td>
+            <td class="column1 style0 n">38079</td>
+            <td class="column2 style0 n">3384</td>
+            <td class="column3 style0 n">41463</td>
+            <td class="column4 style0 n">76992</td>
+            <td class="column5 style0 n">5263</td>
+            <td class="column6 style0 n">82255</td>
+            <td class="column7 style0 n">123718</td>
+            <td class="column8 style0 n">80464</td>
+            <td class="column9 style2 n">53.76%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row93">
+            <td class="column0 style1 n">Sep-19</td>
+            <td class="column1 style0 n">38211</td>
+            <td class="column2 style0 n">3515</td>
+            <td class="column3 style0 n">77664</td>
+            <td class="column4 style0 n">5250</td>
+            <td class="column5 style0 n">5226</td>
+            <td class="column6 style0 n">10476</td>
+            <td class="column7 style0 n">124640</td>
+            <td class="column8 style0 n">80332</td>
+            <td class="column9 style2 n">55.16%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row94">
+            <td class="column0 style1 n">Oct-19</td>
+            <td class="column1 style0 n">37466</td>
+            <td class="column2 style0 n">3605</td>
+            <td class="column3 style0 n">78428</td>
+            <td class="column4 style0 n">5226</td>
+            <td class="column5 style0 n">5320</td>
+            <td class="column6 style0 n">10546</td>
+            <td class="column7 style0 n">124725</td>
+            <td class="column8 style0 n">80387</td>
+            <td class="column9 style2 n">55.16%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row95">
+            <td class="column0 style1 n">Nov-19</td>
+            <td class="column1 style0 n">38059</td>
+            <td class="column2 style0 n">3530</td>
+            <td class="column3 style0 n">41589</td>
+            <td class="column4 style0 n">77859</td>
+            <td class="column5 style0 n">5320</td>
+            <td class="column6 style0 n">83179</td>
+            <td class="column7 style0 n">124768</td>
+            <td class="column8 style0 n">80452</td>
+            <td class="column9 style2 n">55.08%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row96">
+            <td class="column0 style1 n">Dec-19</td>
+            <td class="column1 style0 n">37563</td>
+            <td class="column2 style0 n">3634</td>
+            <td class="column3 style0 n">41197</td>
+            <td class="column4 style0 n">77482</td>
+            <td class="column5 style0 n">5123</td>
+            <td class="column6 style0 n">82605</td>
+            <td class="column7 style0 n">123802</td>
+            <td class="column8 style0 n">80260</td>
+            <td class="column9 style2 n">54.25%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row97">
+            <td class="column0 style1 n">Jan-20</td>
+            <td class="column1 style0 n">37377</td>
+            <td class="column2 style0 n">3569</td>
+            <td class="column3 style0 n">40946</td>
+            <td class="column4 style0 n">78052</td>
+            <td class="column5 style0 n">5190</td>
+            <td class="column6 style0 n">83242</td>
+            <td class="column7 style0 n">124188</td>
+            <td class="column8 style0 n">80156</td>
+            <td class="column9 style2 n">54.93%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row98">
+            <td class="column0 style1 n">Feb-20</td>
+            <td class="column1 style0 n">36919</td>
+            <td class="column2 style0 n">3249</td>
+            <td class="column3 style0 n">40168</td>
+            <td class="column4 style0 n">78489</td>
+            <td class="column5 style0 n">5448</td>
+            <td class="column6 style0 n">83937</td>
+            <td class="column7 style0 n">124105</td>
+            <td class="column8 style0 n">80763</td>
+            <td class="column9 style2 n">53.67%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row99">
+            <td class="column0 style1 n">Mar-20</td>
+            <td class="column1 style0 n">34027</td>
+            <td class="column2 style0 n">3002</td>
+            <td class="column3 style0 n">37029</td>
+            <td class="column4 style0 n">79528</td>
+            <td class="column5 style0 n">5522</td>
+            <td class="column6 style0 n">85050</td>
+            <td class="column7 style0 n">122079</td>
+            <td class="column8 style0 n">80763</td>
+            <td class="column9 style2 n">51.16%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row100">
+            <td class="column0 style1 n">Apr-20</td>
+            <td class="column1 style0 n">32255</td>
+            <td class="column2 style0 n">2663</td>
+            <td class="column3 style0 n">34918</td>
+            <td class="column4 style0 n">76991</td>
+            <td class="column5 style0 n">5427</td>
+            <td class="column6 style0 n">82418</td>
+            <td class="column7 style0 n">117336</td>
+            <td class="column8 style0 n">80763</td>
+            <td class="column9 style2 n">45.28%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row101">
+            <td class="column0 style1 n">May-20</td>
+            <td class="column1 style0 n">30277</td>
+            <td class="column2 style0 n">2766</td>
+            <td class="column3 style0 n">33043</td>
+            <td class="column4 style0 n">74117</td>
+            <td class="column5 style0 n">4879</td>
+            <td class="column6 style0 n">78996</td>
+            <td class="column7 style0 n">112039</td>
+            <td class="column8 style0 n">80763</td>
+            <td class="column9 style2 n">38.73%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row102">
+            <td class="column0 style1 n">Jun-20</td>
+            <td class="column1 style0 n">27965</td>
+            <td class="column2 style0 n">2595</td>
+            <td class="column3 style0 n">30560</td>
+            <td class="column4 style0 n">72793</td>
+            <td class="column5 style0 n">4701</td>
+            <td class="column6 style0 n">77494</td>
+            <td class="column7 style0 n">108054</td>
+            <td class="column8 style0 n">80928</td>
+            <td class="column9 style2 n">33.52%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row103">
+            <td class="column0 style1 n">Jul-20</td>
+            <td class="column1 style0 n">24864</td>
+            <td class="column2 style0 n">2453</td>
+            <td class="column3 style0 n">27317</td>
+            <td class="column4 style0 n">72418</td>
+            <td class="column5 style0 n">4580</td>
+            <td class="column6 style0 n">76998</td>
+            <td class="column7 style0 n">104315</td>
+            <td class="column8 style0 n">80941</td>
+            <td class="column9 style2 n">28.88%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row104">
+            <td class="column0 style1 n">Aug-20</td>
+            <td class="column1 style0 n">24559</td>
+            <td class="column2 style0 n">2217</td>
+            <td class="column3 style0 n">26776</td>
+            <td class="column4 style0 n">70473</td>
+            <td class="column5 style0 n">4615</td>
+            <td class="column6 style0 n">75088</td>
+            <td class="column7 style0 n">101864</td>
+            <td class="column8 style0 n">80669</td>
+            <td class="column9 style2 n">26.27%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row105">
+            <td class="column0 style1 n">Sep-20</td>
+            <td class="column1 style0 n">36919</td>
+            <td class="column2 style0 n">3249</td>
+            <td class="column3 style0 n">40168</td>
+            <td class="column4 style0 n">78489</td>
+            <td class="column5 style0 n">5448</td>
+            <td class="column6 style0 n">83937</td>
+            <td class="column7 style0 n">99474</td>
+            <td class="column8 style0 n">80669</td>
+            <td class="column9 style2 n">23.31%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row106">
+            <td class="column0 style1 n">Oct-20</td>
+            <td class="column1 style0 n">22318</td>
+            <td class="column2 style0 n">2295</td>
+            <td class="column3 style0 n">24613</td>
+            <td class="column4 style0 n">69228</td>
+            <td class="column5 style0 n">4331</td>
+            <td class="column6 style0 n">73559</td>
+            <td class="column7 style0 n">98172</td>
+            <td class="column8 style0 n">80669</td>
+            <td class="column9 style2 n">21.70%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row107">
+            <td class="column0 style1 n">Nov-20</td>
+            <td class="column1 style0 n">21160</td>
+            <td class="column2 style0 n">2434</td>
+            <td class="column3 style0 n">23594</td>
+            <td class="column4 style0 n">69530</td>
+            <td class="column5 style0 n">4298</td>
+            <td class="column6 style0 n">73828</td>
+            <td class="column7 style0 n">97422</td>
+            <td class="column8 style0 n">80683</td>
+            <td class="column9 style2 n">20.75%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row108">
+            <td class="column0 style1 n">Dec-20</td>
+            <td class="column1 style0 n">20513</td>
+            <td class="column2 style0 n">2688</td>
+            <td class="column3 style0 n">23201</td>
+            <td class="column4 style0 n">68932</td>
+            <td class="column5 style0 n">4152</td>
+            <td class="column6 style0 n">73084</td>
+            <td class="column7 style0 n">96285</td>
+            <td class="column8 style0 n">80683</td>
+            <td class="column9 style2 n">19.34%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row109">
+            <td class="column0 style1 n">Jan-21</td>
+            <td class="column1 style0 n">21095</td>
+            <td class="column2 style0 n">2320</td>
+            <td class="column3 style0 n">23415</td>
+            <td class="column4 style0 n">68782</td>
+            <td class="column5 style0 n">4578</td>
+            <td class="column6 style0 n">73360</td>
+            <td class="column7 style0 n">96775</td>
+            <td class="column8 style0 n">80645</td>
+            <td class="column9 style2 n">20.00%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row110">
+            <td class="column0 style1 n">Feb-21</td>
+            <td class="column1 style0 n">21292</td>
+            <td class="column2 style0 n">2364</td>
+            <td class="column3 style0 n">23656</td>
+            <td class="column4 style0 n">68823</td>
+            <td class="column5 style0 n">4556</td>
+            <td class="column6 style0 n">73379</td>
+            <td class="column7 style0 n">97035</td>
+            <td class="column8 style0 n">80900</td>
+            <td class="column9 style2 n">19.94%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row111">
+            <td class="column0 style1 n">Mar-21</td>
+            <td class="column1 style0 n">22427</td>
+            <td class="column2 style0 n">2472</td>
+            <td class="column3 style0 n">24899</td>
+            <td class="column4 style0 n">67993</td>
+            <td class="column5 style0 n">4517</td>
+            <td class="column6 style0 n">72510</td>
+            <td class="column7 style0 n">97409</td>
+            <td class="column8 style0 n">80892</td>
+            <td class="column9 style2 n">20.42%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row112">
+            <td class="column0 style1 n">Apr-21</td>
+            <td class="column1 style0 n">21202</td>
+            <td class="column2 style0 n">2404</td>
+            <td class="column3 style0 n">23606</td>
+            <td class="column4 style0 n">69058</td>
+            <td class="column5 style0 n">4507</td>
+            <td class="column6 style0 n">73565</td>
+            <td class="column7 style0 n">97171</td>
+            <td class="column8 style0 n">81500</td>
+            <td class="column9 style2 n">19.23%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row113">
+            <td class="column0 style1 n">May-21</td>
+            <td class="column1 style0 n">21476</td>
+            <td class="column2 style0 n">2418</td>
+            <td class="column3 style0 n">23894</td>
+            <td class="column4 style0 n">68249</td>
+            <td class="column5 style0 n">4446</td>
+            <td class="column6 style0 n">72695</td>
+            <td class="column7 style0 n">96589</td>
+            <td class="column8 style0 n">81500</td>
+            <td class="column9 style2 n">18.51%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row114">
+            <td class="column0 style1 n">Jun-21</td>
+            <td class="column1 style0 n">21707</td>
+            <td class="column2 style0 n">2423</td>
+            <td class="column3 style0 f">24130</td>
+            <td class="column4 style0 n">67899</td>
+            <td class="column5 style0 n">4371</td>
+            <td class="column6 style0 f">72270</td>
+            <td class="column7 style0 f">96400</td>
+            <td class="column8 style0 n">81524</td>
+            <td class="column9 style2 n">18.25%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row115">
+            <td class="column0 style1 n">Jul-21</td>
+            <td class="column1 style0 n">22036</td>
+            <td class="column2 style0 n">2471</td>
+            <td class="column3 style0 f">24507</td>
+            <td class="column4 style0 n">67494</td>
+            <td class="column5 style0 n">4385</td>
+            <td class="column6 style0 f">71879</td>
+            <td class="column7 style0 f">96386</td>
+            <td class="column8 style0 n">82326</td>
+            <td class="column9 style2 n">17.08%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row116">
+            <td class="column0 style1 n">Aug-21</td>
+            <td class="column1 style0 n">22066</td>
+            <td class="column2 style0 n">2507</td>
+            <td class="column3 style0 f">24573</td>
+            <td class="column4 style0 n">67503</td>
+            <td class="column5 style0 n">4309</td>
+            <td class="column6 style0 f">71812</td>
+            <td class="column7 style0 f">96385</td>
+            <td class="column8 style0 n">82326</td>
+            <td class="column9 style2 n">17.08%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row117">
+            <td class="column0 style1 n">Sep-21</td>
+            <td class="column1 style0 n">22305</td>
+            <td class="column2 style0 n">2558</td>
+            <td class="column3 style0 f">24863</td>
+            <td class="column4 style0 n">67749</td>
+            <td class="column5 style0 n">4207</td>
+            <td class="column6 style0 f">71956</td>
+            <td class="column7 style0 f">96819</td>
+            <td class="column8 style0 n">82326</td>
+            <td class="column9 style2 n">17.60%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row118">
+            <td class="column0 style1 n">Oct-21</td>
+            <td class="column1 style0 n">22560</td>
+            <td class="column2 style0 n">2517</td>
+            <td class="column3 style0 f">25077</td>
+            <td class="column4 style0 n">67603</td>
+            <td class="column5 style0 n">4218</td>
+            <td class="column6 style0 f">71821</td>
+            <td class="column7 style0 f">96898</td>
+            <td class="column8 style0 n">80429</td>
+            <td class="column9 style2 n">20.48%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row119">
+            <td class="column0 style1 n">Nov-21</td>
+            <td class="column1 style0 n">23016</td>
+            <td class="column2 style0 n">2582</td>
+            <td class="column3 style0 n">25598</td>
+            <td class="column4 style0 n">67459</td>
+            <td class="column5 style0 n">4213</td>
+            <td class="column6 style0 n">71672</td>
+            <td class="column7 style0 f">97270</td>
+            <td class="column8 style0 n">80429</td>
+            <td class="column9 style3 n">20.94%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row120">
+            <td class="column0 style1 n">Dec-21</td>
+            <td class="column1 style0 n">23012</td>
+            <td class="column2 style0 n">2583</td>
+            <td class="column3 style0 n">25595</td>
+            <td class="column4 style0 n">67229</td>
+            <td class="column5 style0 n">4089</td>
+            <td class="column6 style0 n">71318</td>
+            <td class="column7 style0 f">96913</td>
+            <td class="column8 style0 n">80429</td>
+            <td class="column9 style3 n">20.50%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+          <tr class="row121">
+            <td class="column0 style1 n">Jan-22</td>
+            <td class="column1 style0 n">22688</td>
+            <td class="column2 style0 n">2605</td>
+            <td class="column3 style0 f">25293</td>
+            <td class="column4 style0 n">67177</td>
+            <td class="column5 style0 n">4093</td>
+            <td class="column6 style0 f">71270</td>
+            <td class="column7 style0 f">96563</td>
+            <td class="column8 style0 n">80234</td>
+            <td class="column9 style3 n">20.35%</td>
+            <td class="column10">&nbsp;</td>
+            <td class="column11 style2 null"></td>
+          </tr>
+        </tbody>
+    </table>
+  </body>
+</html>
