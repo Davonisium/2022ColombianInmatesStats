@@ -1,0 +1,129 @@
+---
+title: "Análisis de variables estadísticas"
+author: "David Morales"
+date: "5/3/2022"
+output:
+  word_document: default
+  pdf_document: default
+---
+
+Lo primero que se hizo fue recopilar la información del INPEC para generar una base de datos agrupados que nos permitiera visualizarlos de manera adecuada en el software R para gráficar datos para el análisis, se puede revisar el anexo al documento para revisar la base de datos agrupados utilizada.
+
+Una vez se tuvo los datos se utilizaron los paquetes de la herramienta R para hacer las gráficas sobre las estadísticas de la población carcelaria y hacer observaciones
+
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(plotly)
+library(hrbrthemes)
+library(scales)
+library(ggpubr)
+library(readxl)
+```
+
+
+```{r}
+data <- read_excel("C:\\Users\\dafem\\Desktop\\Population_and_Overcrowding_since_2012.xlsx")
+
+ch_hac <- data %>% 
+      ggplot( aes(x=date, y=hac)) +
+      geom_line(color="#9B2226") +
+      labs(x = "Año", y= "% de Hacinamiento", title = "Hacinamiento carcelario")+
+      scale_y_continuous(labels = percent, limits = c(0,0.75))+
+      scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+      theme_classic()+
+      theme(plot.title = element_text(hjust = 0.5))
+
+ch_hac
+
+ch_cap <- data %>% 
+     ggplot( aes(x=date, y=cap)) +
+     geom_line(color="#005F73") +
+   labs(x = "Año", y= "Población", title = "Capacidad carcelaria")+
+   scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+     theme_classic()+
+     theme(plot.title = element_text(hjust = 0.5))
+
+ch_cap 
+```
+
+En estas primeras gráficas correspondientes al hacinamiento y la capacidad de los centros penitenciarios, se observa que ambos tienen una tendencia creciente; por lo tanto el aumento de la capacidad de dichas instituciones no tiene una incidencia sustancial en la reducción del hacinamiento y las consecuencias del mismo.Es pertinenete revisar qué otros factores pueden estar impactando en las variables que provoquen que los esfuerzos por aumentar la capacidad no tengan los efectos deseados.
+
+```{r}
+ch_tp <- data %>% 
+   ggplot( aes(x=date, y=t_p)) +
+   geom_line(color="#005F73") +
+   labs(x = "Año", y= "Población", title = "Población intramural")+
+   scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+   theme_classic()+
+   theme(plot.title = element_text(hjust = 0.5))
+
+ch_tp
+
+ch_tc <- data %>% 
+   ggplot( aes(x=date, y=t_c)) +
+   geom_line(color="#005F73") +
+   labs(x = "Año", y= "Población", title = "Población condenada")+
+   scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+   theme_classic()+
+   theme(plot.title = element_text(hjust = 0.5))
+
+ch_tc
+
+ch_ts <- data %>% 
+   ggplot( aes(x=date, y=t_s)) +
+   geom_line(color="#005F73") +
+   labs(x = "Año", y= "Población", title = "Población sindicada")+
+   scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+   theme_classic()+
+   theme(plot.title = element_text(hjust = 0.5))
+
+ch_ts
+```
+
+En las observaciones de estos datos que corresponden al total de la población privada de la libertad y su respectiva clasificación entre las personas condenadas y las sindicadas; se puede apreciar que el grupo que principalmente constituye el total de las personas intramural son la spersonas condenadas, teniendo un porcentaje del más del 70% del total de la población.
+
+Es recomendable analizar propuestas que, en caso de ser excluyentes, tengan mayor impacto sobre la población condenada que sobre la sindicada ya que estas tendrían por consiguiente mayor impacto sopbre la problemática.
+
+Por último, es importante señalar sobre esta sección que los datos atípicos observables en los años 2019-2020 deben ser rectificados con otros registros del INPEC; se presume en primera medida que esto obedece a traslados o movimientos en la población correspondientes con los decretos expedidos a causa de la crisis sanitaria ocasionada por el COVID-19, pero en general se espera que estos datos retomen el nivel en el que estaban, tanto en magnitud como en crecimiento.Dado entonces que son explicables y demasiado puntuales en el conglomerado de información; no resultan representativos para ser tenidos en cuenta a maor medida ni por este análisis ni por los subsecuentes que tenga el proyecto.
+
+```{r}
+ch_mc <- data %>% 
+   ggplot( aes(x=date, y=m_c)) +
+   geom_line(color="#005F73") +
+   labs(x = "Año", y= "Población", title = "Hombres condenados")+
+   scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+   theme_classic()+
+   theme(plot.title = element_text(hjust = 0.5))
+
+ch_mc
+
+ch_fs <- data %>% 
+   ggplot( aes(x=date, y=f_s)) +
+   geom_line(color="#005F73") +
+   labs(x = "Año", y= "Población", title = "Mujeres sindicadas")+
+   scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+   theme_classic()+
+   theme(plot.title = element_text(hjust = 0.5))
+
+ch_fs
+
+ch_fc <- data %>% 
+   ggplot( aes(x=date, y=f_c)) +
+   geom_line(color="#005F73") +
+   labs(x = "Año", y= "Población", title = "Mujeres condenadas")+
+   scale_x_datetime(breaks= "1 years", labels= date_format("%Y")) +
+   theme_classic()+
+   theme(plot.title = element_text(hjust = 0.5))
+
+ch_fc
+```
+
+Estas gráficas hacen la discriminación de los totales poblacionales según el género y la condición de condenado-sindicado, lo cuál permite analizar la dimensión que ocupa cada género en cada condición de la población privada de la libertad.
+
+A priori, se puede observar que la tendencia de un mayor número de personas condenadas que sindicadas se mantiene tanto para hombres como para mujeres.La única otra observación apreciable, es que la cantidad de presos pertenencientes al género másculino es significativamente mayor a la del femenino; sin embargo es encesario poner los datos a la luz de un análisis cualitativo para hacer las consideraciones que requiere un enfoque diferencial de la problemática y de las rutas de acción.
+
+Durante la recopilación de los datos para elaborar este análisis se estima posible y recomendable geolocalizar la información para tener una perspectiva descentralizada y con mayor precisión sobre el ECI. Esto se elaborará para el apartado de análisis del problema del proyecto, propuesto en el entregable 2.
+
+
